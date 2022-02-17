@@ -16,6 +16,16 @@ namespace Flyer1.Models
 
         [Column(TypeName = "decimal(6, 2)")]
         public decimal Pret { get; set; }
+        public decimal Discount { get; set; }
+        private decimal _Pretredus;
+        [Display(Name = "Pret Redus")]
+        
+        public decimal PretRedus
+        {
+            get
+            { return (Pret - Discount); }
+            set { _Pretredus = value; }
+        }
         public DateTime Data { get; set; }
 
         public int CompanieID { get; set; }
