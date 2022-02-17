@@ -35,12 +35,22 @@
                 <span asp-validation-for="Bilet.Pret" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Bilet.Discount" class="control-label"></label>
+                <input asp-for="Bilet.Discount" class="form-control" />
+                <span asp-validation-for="Bilet.Discount" class="text-danger"></span>
+            </div>
+              <div class="form-group">
+                <label asp-for="Bilet.PretRedus" class="control-label"></label>
+                <input asp-for="Bilet.PretRedus" class="form-control" />
+                <span asp-validation-for="Bilet.PretRedus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Bilet.Data" class="control-label"></label>
                 <input asp-for="Bilet.Data" class="form-control" />
                 <span asp-validation-for="Bilet.Data" class="text-danger"></span>
             </div>
             <label asp-for="Bilet.CompanieID" class="control-label">Publisher Name</label>
-            <select asp-for="Bilet.CompanieID" class="form-control" asp-items="ViewBag.PublisherID">
+            <select asp-for="Bilet.CompanieID" class="form-control" asp-items="ViewBag.CompanieID">
             </select>
             <span asp-validation-for="Bilet.CompanieID" class="text-danger"></span>
             <div class="form-group">
